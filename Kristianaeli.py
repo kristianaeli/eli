@@ -240,17 +240,23 @@ def Ambil_Token():
 
 ######LOGIN_COKIES######
 def cokies():
-	os.system("clear")
+	os.system('clear')
+	print logo
+	toket = raw_input("\033[1;97m[\033[1;95m?\033[1;97m] \033[1;93mCokies : \033[1;96m")
 	try:
-		cek = open("cookies").read()
-             except FileNotFoundError:
-                    cek = input("\033[90m> \033[00mCoookies : \033[1;92m")
-             cek = {"cookie":cek}
-             ismi = ses.get(mbasic.format("/me",verify=False),cookies=cek).content
-             if "mbasic_logout_button" in str(ismi):
-                     if "Apa yang Anda pikirkan sekarang" in str(ismi):
-                             with open("cookies","w") as f:
-                                     f.write(cek["cookie"])
+		otw = requests.get('https://graph.facebook.com/me?access_cokies='+toket)
+		a = json.loads(otw.text)
+		nama = a['name']
+		zedd = open("login.txt", 'w')
+		zedd.write(toket)
+		zedd.close()
+		print '\033[1;97m[\033[1;92m✓\033[1;97m]\033[1;92m Login Berhasil'
+		os.system('xdg-open https://www.facebook.com/khairul.fatihin557 ')
+		bot_komen()
+	except KeyError:
+		print "\033[1;97m[\033[1;91m!\033[1;97m] \033[1;91mCokies Salah !"
+		time.sleep(1)
+		masuk()
                                      
 ######MENU#######
 def menu():
