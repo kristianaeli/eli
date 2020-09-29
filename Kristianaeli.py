@@ -282,6 +282,27 @@ def menu():
 		print"[!] Tidak ada koneksi"
 		keluar()
 	os.system("clear")
+	try:
+		toket=open('login.txt','r').read()
+	except IOError:
+		os.system('clear')
+		os.system('rm -rf login.txt')
+		masuk()
+	try:
+		otw = requests.get('https://graph.facebook.com/me?access_cokies='+toket)
+		a = json.loads(otw.text)
+		nama = a['name']
+		id = a['id']
+	except KeyError:
+		os.system('clear')
+		print"\033[1;96m[!] \033[1;91mCokies invalid"
+		os.system('rm -rf login.txt')
+		time.sleep(1)
+		masuk()
+	except requests.exceptions.ConnectionError:
+		print"[!] Tidak ada koneksi"
+		keluar()
+	os.system("clear")
 	print logo
 	print "\033[1;31;1m=========================================="
 	print "\033[37;1m=========================================="
