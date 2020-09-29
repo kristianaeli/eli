@@ -245,7 +245,6 @@ def cokies():
 	toket = raw_input("\033[1;97m[\033[1;95m?\033[1;97m] \033[1;93mCokies : \033[1;96m")
 	try:
                     cek = open("cookies").read()
-             except IOError:
                     cek = input("\033[90m> \033[00mCoookies : \033[1;92m")
              cek = {"cookie":cek}
              ismi = ses.get(mbasic.format("/me",verify=False),cookies=cek).content
