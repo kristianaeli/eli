@@ -23,7 +23,7 @@ Github   \033[1;91m: \033[4;92mhttps://kristianaeli/eli\033[00m
 def balik():
     f=input("\033[00m\t[\033[96mEnter To Back\033[00m]")
     if f == "":
-       os.system("python cyberlombok.py")
+       os.system("python Kristianaeli.py")
     else:
        sys.exit("\033[1;91mexit\033[00m")
 def mbf():
