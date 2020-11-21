@@ -20,7 +20,7 @@ def main():
     os.system ('figlet Tools Crack FB')
     print'\33[36;1m+\33[1;33m===========================================\33[36;1m+'
     print'\33[36;1mAuthor    \33[31;1m: \33[1;33mKRISTIANA ELI '
-    print'\33[36;1mFacebook    \33[31;1m: \33[1;33mhttps://github.com/eli '
+    print'\33[36;1mFacebook  \33[31;1m: \33[1;33mhttps://github.com/eli '
     print'\33[36;1m+\33[1;33m===========================================\33[36;1m+'
     print'\33[32;1m++++++++++++  \33[37;1mM E N U \33[32;1m++++++++++++'
     print'\33[32;1m[\33[37;1m1\33[32;1m] \33[36;1mHack Fb Login Token '
