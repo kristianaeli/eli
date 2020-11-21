@@ -25,7 +25,7 @@ def main():
     print'\33[32;1m++++++++++++  \33[37;1mM E N U \33[32;1m++++++++++++'
     print'\33[32;1m[\33[37;1m1\33[32;1m] \33[36;1mHack Fb Login Token '
     print'\33[32;1m[\33[37;1m2\33[32;1m] \33[36;1mHack Fb Login Cokie '
-    print'\33[32;1m[\33[37;1m7\33[32;1m] \33[36;1mUbah Cookies Jadi Token '
+    print'\33[32;1m[\33[37;1m3\33[32;1m] \33[36;1mUbah Cookies Jadi Token '
     print'\33[32;1m[\33[31;1m0\33[32;1m] \33[31;1mExit '
     gans = raw_input ('\33[36;1m==> ')
     if gans in ['1']:
