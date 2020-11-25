@@ -19,10 +19,10 @@ def main():
     print ('\33[32;1m')
     os.system ('figlet Tools Crack FB')
     print'\33[36;1m+\33[1;33m===========================================\33[36;1m+'
-    print'\33[36;1mAuthor    \33[32;1m: \33[1;33mKRISTIANA ELI '
-    print'\33[36;1mFacebook  \33[32;1m: \33[1;33mhttps://github.com/eli '
+    print'\33[36;1mAuthor    \33[32;1m: \33[31;1mKRISTIANA ELI '
+    print'\33[36;1mFacebook  \33[32;1m: \33[31;1mhttps://github.com/eli '
     print'\33[36;1m+\33[1;33m===========================================\33[36;1m+'
-    print'\33[32;1m++++++++++++  \33[37;1mM E N U \33[32;1m++++++++++++'
+    print'\33[32;1m============  \33[37;1mM E N U \33[32;1m============'
     print'\33[32;1m[\33[37;1m1\33[32;1m] \33[36;1mHack Fb Login Token '
     print'\33[32;1m[\33[37;1m2\33[32;1m] \33[36;1mHack Fb Login Cokie '
     print'\33[32;1m[\33[37;1m3\33[32;1m] \33[36;1mUbah Cookies Jadi Token '
@@ -31,7 +31,7 @@ def main():
     if gans in ['1']:
         time.sleep(1)
         os.system('pkg install python2')
-        os.system('pip2 install git')
+        os.system('pip2 install tqdm')
         os.system('pip2 install requests')
         os.system('pip2 install mechanize')
         os.system ('git clone https://github.com/MantanPrawan/khairulfatihin')
