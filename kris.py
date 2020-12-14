@@ -368,7 +368,7 @@ def pilih_indo():
 		os.system('clear')
 		print logo
 		try:
-			print "\033[1;92m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+			print "\033[1;92m+================================================+"
 			idlist = raw_input('\033[1;97m{\033[1;93m?\033[1;97m} Nama File : ')
 			for line in open(idlist,'r').readlines():
 				id.append(line.strip())
@@ -390,7 +390,7 @@ def pilih_indo():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;97m{\033[1;93m•\033[1;97m} Crack Berjalan "+o),;sys.stdout.flush();time.sleep(1)
-	print "\n\033[1;92m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	print "\n\033[1;92m+================================================+"
 	
 ##### MAIN INDONESIA #####
 	def main(arg):
@@ -962,11 +962,11 @@ def pilih_sandi():
 			
 	p = ThreadPool(30)
 	p.map(main, id)
-	print "\033[1;92m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	print "\033[1;92m+================================================+"
 	print '\033[1;97m[\033[1;96m✓\033[1;97m] \033[1;97mSelesai ....'
 	print"\033[1;97m[\033[1;96m+\033[1;97m] \033[1;97mTotal \033[1;92mOK\033[1;97m/\x1b[1;91mCP \033[1;97m: \033[1;92m"+str(len(oks))+"\033[1;97m/\033[1;91m"+str(len(cekpoint))
 	print("\033[1;97m[\033[1;96m!\033[1;97m] \033[1;97mCP file tersimpan : out/world.txt")
-	print "\033[1;92m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	print "\033[1;92m+================================================+"
 	raw_input("\033[1;93m[\033[1;97m Kembali \033[1;93m]")
 	os.system("python2 kris.py")
 	
