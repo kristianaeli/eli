@@ -105,12 +105,12 @@ vuln = "Vuln"
 def masuk():
 	os.system('clear')
 	print logo
-	print "\033[1;92m+==================================================+"
+	print "\033[1;92m+================================================+"
 	print "\033[1;97m[\033[1;92m01\033[1;97m]\033[1;96m->\033[1;93m LOGIN EMAIL FB"
 	print "\033[1;97m[\033[1;92m02\033[1;97m]\033[1;96m->\033[1;93m LOGIN TOKEN FB "
 	print "\033[1;97m[\033[1;92m03\033[1;97m]\033[1;96m->\033[1;93m AMBIL TOKEN"
 	print "\033[1;97m[\033[1;91m00\033[1;97m]\033[1;96m->\033[1;93m KELUAR"
-	print "\033[1;92m+=================================================+"
+	print "\033[1;92m+===============================================+"
 	pilih_masuk()
 
 def pilih_masuk():
@@ -262,11 +262,11 @@ def menu():
 		keluar()
 	os.system("clear")
 	print logo
-	print "\033[1;92m+==================================================+"
+	print "\033[1;92m+================================================+"
 	print "\033[1;97m[\033[1;92m✓\033[1;97m]\033[1;93m NAMA\033[1;91m  =>\033[1;92m "+nama
 	print "\033[1;97m[\033[1;92m•\033[1;97m]\033[1;93m ID\033[1;91m    =>\033[1;92m "+id
 	print "\033[1;97m[\033[1;92m+\033[1;97m]\033[1;93m TTL\033[1;91m   =>\033[1;92m "+ a['birthday']
-	print "\033[1;92m+==================================================+"
+	print "\033[1;92m+================================================+"
 	print "\033[1;97m[\033[1;92m01\033[1;97m]\033[1;96m->\033[1;97m CRACK ID INDONESIA"
 	print "\033[1;97m[\033[1;92m02\033[1;97m]\033[1;96m->\033[1;97m CRACK ID LOCKED/GUARD"
 	print "\033[1;97m[\033[1;92m03\033[1;97m]\033[1;96m->\033[1;97m CRACK ID  LUAR NEGRI (Buat Sandi)"
@@ -275,7 +275,7 @@ def menu():
 	print "\033[1;97m[\033[1;92m06\033[1;97m]\033[1;96m->\033[1;97m PROFILE GUARD"
 	print "\033[1;97m[\033[1;92m07\033[1;97m]\033[1;96m->\033[1;97m JANGAN LUPA FOLOW FB GUE"
 	print "\033[1;97m[\033[1;91m00\033[1;97m]\033[1;96m->\033[1;97m KELUAR"
-	print "\033[1;92m+==================================================+"
+	print "\033[1;92m+================================================+"
 	pilih()
 	
 ######PILIH######
@@ -320,12 +320,12 @@ def indo():
 		keluar()
 	os.system('clear')
 	print logo
-	print "\033[1;92m+==================================================+"
+	print "\033[1;92m+================================================+"
 	print "\033[1;97m[\033[1;93m01\033[ 1;97m]\033[1;96m->\033[1;97m CRACK DARI LIST TEMAN"
 	print "\033[1;97m[\033[1;93m02\033[1;97m]\033[1;96m->\033[1;97m  CRACK ID PUBLIK"
 	print "\033[1;97m[\033[1;93m03\033[1;97m]\033[1;96m->\033[1;97m  CRACK DARI FILE"
 	print "\033[1;97m[\033[1;91m00\033[1;97m]\033[1;96m->\033[1;97m  KEMBALI"
-	print "\033[1;92m+==================================================+"
+	print "\033[1;92m+================================================+"
 	pilih_indo()
 
 #### PILIH INDO ####
@@ -337,7 +337,7 @@ def pilih_indo():
 	elif teak =="1" or teak =="01":
 		os.system('clear')
 		print logo
-		print "\033[1;92m+==================================================+"
+		print "\033[1;92m+================================================+"
 		r = requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for s in z['data']:
@@ -345,9 +345,9 @@ def pilih_indo():
 	elif teak =="2" or teak =="02":
 		os.system('clear')
 		print logo
-		print "\033[1;92m+=================================================+"
+		print "\033[1;92m+===============================================+"
 		print " \033[1;93m         %%% \033[1;97mCRACK INDONESIA \033[1;93m%%%"
-		print "\033[1;92m+=================================================+"
+		print "\033[1;92m+===============================================+"
 		idt = raw_input("\033[1;97m{\033[1;93m+\033[1;97m} ID publik/teman : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
@@ -533,11 +533,11 @@ def pilih_indo():
 			
 	p = ThreadPool(30)
 	p.map(main, id)
-	print "\033[1;92m+==================================================+"
+	print "\033[1;92m+================================================+"
 	print '\033[1;97m[\033[1;93m✓\033[1;97m] \033[1;97mSelesai ....'
 	print"\033[1;97m[\033[1;93m+\033[1;97m] \033[1;97mTotal \033[1;92mOK\033[1;97m/\x1b[1;93mCP \033[1;97m: \033[1;92m"+str(len(oks))+"\033[1;97m/\033[1;93m"+str(len(cekpoint))
 	print '\033[1;97m[\033[1;93m!\033[1;97m] \033[1;97mCP file tersimpan : out/ind1.txt'
-	print "\033[1;92m+==================================================+"
+	print "\033[1;92m+================================================+"
 	raw_input("\033[1;93m[\033[1;97m Kembali \033[1;93m]")
 	os.system("python2 kris.py")
 	
@@ -554,12 +554,12 @@ def bangla():
 		keluar()
 	os.system('clear')
 	print logo
-	print "\033[1;92m+==================================================+"
+	print "\033[1;92m+================================================+"
 	print "\033[1;97m[\033[1;94m01\033[1;97m]\033[1;96m->\033[1;97m Crack dari daftar teman"
 	print "\033[1;97m[\033[1;94m02\033[1;97m]\033[1;96m->\033[1;97m Crack dari id publik/teman"
 	print "\033[1;97m[\033[1;94m03\033[1;97m]\033[1;96m->\033[1;97m Crack dari file"
 	print "\033[1;97m[\033[1;91m00\033[1;97m]\033[1;96m->\033[1;97m Kembali"
-	print "\033[1;92m+==================================================+"
+	print "\033[1;92m+================================================+"
 	pilih_bangla()
 
 #### PILIH BANGLADESH ####
@@ -571,7 +571,7 @@ def pilih_bangla():
 	elif reak =="1" or reak == "01":
 		os.system('clear')
 		print logo
-		print "\033[1;92m+=================================================+"
+		print "\033[1;92m+===============================================+"
 		r = requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for s in z['data']:
@@ -579,9 +579,9 @@ def pilih_bangla():
 	elif reak =="2" or reak == "02":
 		os.system('clear')
 		print logo
-		print "\033[1;92m+=================================================+"
+		print "\033[1;92m+===============================================+"
 		print " \033[1;94m    %%% \033[1;97mCRACK LOCKED/GUARD \033[1;94m%%% "
-		print "\033[1;92m+=================================================+"
+		print "\033[1;92m+===============================================+"
 		dok = raw_input("\033[1;97m{\033[1;94m+\033[1;97m} ID publik/teman : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+dok+"?access_token="+toket)
@@ -602,7 +602,7 @@ def pilih_bangla():
 		os.system('clear')
 		print logo
 		try:
-			print "\033[1;92m+=================================================+"
+			print "\033[1;92m+===============================================+"
 			idlist = raw_input('\033[1;97m{\033[1;94m?\033[1;97m} Nama File : ')
 			for line in open(idlist,'r').readlines():
 				id.append(line.strip())
@@ -624,7 +624,7 @@ def pilih_bangla():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;97m{\033[1;94m•\033[1;97m} Crack Berjalan "+o),;sys.stdout.flush();time.sleep(1)
-	print "\n\033[1;92m+===================================================+"
+	print "\n\033[1;92m+=================================================+"
 	
 #####MAIN_BANGLADESH#####
 	def main(arg):
@@ -767,11 +767,11 @@ def pilih_bangla():
 			
 	p = ThreadPool(30)
 	p.map(main, id)
-	print "\033[1;92m+=================================================+"
+	print "\033[1;92m+===============================================+"
 	print '\033[1;97m[\033[1;94m✓\033[1;97m] \033[1;97mSelesai ....'
 	print"\033[1;97m[\033[1;94m+\033[1;97m] \033[1;97mTotal \033[1;92mOK\033[1;97m/\x1b[1;94mCP \033[1;97m: \033[1;92m"+str(len(oke))+"\033[1;97m/\033[1;94m"+str(len(cpe))
 	print '\033[1;97m[\033[1;94m!\033[1;97m] \033[1;97mCP file tersimpan : out/pakisbang.txt'
-	print "\033[1;92m+=================================================+"
+	print "\033[1;92m+===============================================+"
 	raw_input("\033[1;93m[\033[1;97m Kembali \033[1;93m]")
 	os.system("python2 kris.py")
 	
@@ -788,12 +788,12 @@ def sandi():
 		keluar()
 	os.system('clear')
 	print logo
-	print "\033[1;92m+=================================================+"
+	print "\033[1;92m+===============================================+"
 	print "\033[1;97m[\033[1;96m01\033[1;97m]\033[1;96m->\033[1;97m Crack dari daftar teman"
 	print "\033[1;97m[\033[1;96m02\033[1;97m]\033[1;96m->\033[1;97m Crack dari id publik/teman"
 	print "\033[1;97m[\033[1;96m03\033[1;97m]\033[1;96m->\033[1;97m Crack dari file"
 	print "\033[1;97m[\033[1;91m00\033[1;97m]\033[1;96m->\033[1;97m Kembali"
-	print "\033[1;92m+=================================================+"
+	print "\033[1;92m+===============================================+"
 	pilih_sandi()
 
 def pilih_sandi():
@@ -804,15 +804,15 @@ def pilih_sandi():
 	elif weak =="1" or weak =="01":
 		os.system('clear')
 		print logo
-		print "\033[1;92m+=================================================+"
+		print "\033[1;92m+===============================================+"
 		print "\033[1;93m       %%%  \033[1;97mBUAT LIST PASSWORD\033[1;93m  %%%"
-		print "\033[1;92m+=================================================+"
+		print "\033[1;92m+===============================================+"
 		print ("\033[1;97m{\033[1;96m?\033[1;97m} Sandi 1 : NamaDepan123 ")
 		print ("\033[1;97m{\033[1;96m?\033[1;97m} Sandi 2 : NamaDepan1234 ")
 		print ("\033[1;97m{\033[1;96m?\033[1;97m} Sandi 3 : NamaDepan12345 ")
 		sandi4 = raw_input("\033[1;97m{\033[1;96m?\033[1;97m} Sandi 4 : ")
 		sandi5 = raw_input("\033[1;97m{\033[1;96m?\033[1;97m} Sandi 5 : ")
-		print "\033[1;92m+=================================================+"
+		print "\033[1;92m+===============================================+"
 		r = requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for s in z['data']:
@@ -820,15 +820,15 @@ def pilih_sandi():
 	elif weak =="2" or weak =="02":
 		os.system('clear')
 		print logo
-		print "\033[1;92m+=================================================+"
+		print "\033[1;92m+===============================================+"
 		print "\033[1;93m       %%%  \033[1;97mBUAT LIST PASSWORD\033[1;93m  %%%"
-		print "\033[1;92m+=================================================+"
+		print "\033[1;92m+===============================================+"
 		print ("\033[1;97m{\033[1;96m?\033[1;97m} Sandi 1 : NamaDepan123 ")
 		print ("\033[1;97m{\033[1;96m?\033[1;97m} Sandi 2 : NamaDepan1234 ")
 		print ("\033[1;97m{\033[1;96m?\033[1;97m} Sandi 3 : NamaDepan12345 ")
 		sandi4 = raw_input("\033[1;97m{\033[1;96m?\033[1;97m} Sandi 4 : ")
 		sandi5 = raw_input("\033[1;97m{\033[1;96m?\033[1;97m} Sandi 5 : ")
-		print "\033[1;92m+=================================================+"
+		print "\033[1;92m+===============================================+"
 		idt = raw_input("\033[1;97m{\033[1;96m+\033[1;97m} ID publik/teman : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
@@ -846,15 +846,15 @@ def pilih_sandi():
 		os.system('clear')
 		print logo
 		try:
-			print "\033[1;92m+=================================================+"
+			print "\033[1;92m+===============================================+"
 			print "\033[1;93m       %%%  \033[1;97mBUAT LIST PASSWORD\033[1;93m  %%%"
-			print "\033[1;92m+=================================================+"
+			print "\033[1;92m+===============================================+"
 			print ("\033[1;97m{\033[1;96m?\033[1;97m} Sandi 1 : NamaDepan123 ")
 			print ("\033[1;97m{\033[1;96m?\033[1;97m} Sandi 2 : NamaDepan1234 ")
 			print ("\033[1;97m{\033[1;96m?\033[1;97m} Sandi 3 : NamaDepan12345 ")
 			sandi4 = raw_input("\033[1;97m{\033[1;96m?\033[1;97m} Sandi 4 : ")
 			sandi5 = raw_input("\033[1;97m{\033[1;96m?\033[1;97m} Sandi 5 : ")
-			print "\033[1;92m+=================================================+"
+			print "\033[1;92m+===============================================+"
 			idlist = raw_input('\033[1;97m{\033[1;96m?\033[1;97m} Nama File : ')
 			for line in open(idlist,'r').readlines():
 				id.append(line.strip())
@@ -877,7 +877,7 @@ def pilih_sandi():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;97m{\033[1;96m•\033[1;97m} Crack Berjalan "+o),;sys.stdout.flush();time.sleep(1)
-	print "\n\033[1;92m+=================================================+"
+	print "\n\033[1;92m+===============================================+"
 	
 #####CRACK SANDI#####
 	def main(arg):
@@ -982,11 +982,11 @@ def dump():
 		menu()
 	os.system('clear')
 	print logo
-	print "\033[1;92m+=================================================+"
+	print "\033[1;92m+===============================================+"
 	print "\033[1;97m[\033[1;95m01\033[1;97m]\033[1;96m->\033[1;97m Ambil ID dari daftar teman "
 	print "\033[1;97m[\033[1;95m02\033[1;97m]\033[1;96m->\033[1;97m Ambil ID dari publik/teman "
 	print "\033[1;97m[\033[1;91m00\033[1;97m]\033[1;96m->\033[1;97m Kembali "
-	print "\033[1;92m+=================================================+"
+	print "\033[1;92m+===============================================+"
 	dump_pilih()
 	
 	
@@ -1022,7 +1022,7 @@ def id_teman():
 	try:
 		os.system('clear')
 		print logo
-		print "\033[1;92m+=================================================+"
+		print "\033[1;92m+===============================================+"
 		r=requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
 		z=json.loads(r.text)
 		jalan('\033[1;97m[\033[1;95m•\033[1;97m] \033[1;97mMengambil semua ID teman \033[1;97m...')
@@ -1038,7 +1038,7 @@ def id_teman():
 		done = raw_input("\r\033[1;97m[\033[1;95m?\033[1;97m] \033[1;97mSimpan nama file : ")
 		os.rename('out/id_teman.txt','out/'+done)
 		print("\r\033[1;97m[\033[1;95m+\033[1;97m] \033[1;97mFile tersimpan : \033[1;97mout/"+done)
-		print "\033[1;92m+=================================================+"
+		print "\033[1;92m+===============================================+"
 		raw_input("\033[1;93m[ \033[1;97mKembali \033[1;93m]")
 		os.system("python2 kris.py")
 	except IOError:
@@ -1078,7 +1078,7 @@ def idfrom_teman():
 	try:
 		os.system('clear')
 		print logo
-		print "\033[1;92m+=================================================+"
+		print "\033[1;92m+===============================================+"
 		idt = raw_input("\033[1;97m[\033[1;95m+\033[1;97m] ID publik/teman : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
@@ -1091,7 +1091,7 @@ def idfrom_teman():
 		r=requests.get("https://graph.facebook.com/"+idt+"?fields=friends.limit(50000)&access_token="+toket)
 		z=json.loads(r.text)
 		jalan('\033[1;97m[\033[1;95m•\033[1;97m] \033[1;97mMengambil Semua Id ...')
-		print "\033[1;92m+=================================================+"
+		print "\033[1;92m+===============================================+"
 		bz = open('out/id_teman_from_teman.txt','w')
 		for a in z['friends']['data']:
 			idfromteman.append(a['id'])
@@ -1140,11 +1140,11 @@ def guard():
 		login()
 	os.system('clear')
 	print logo
-	print "\033[1;92m+=================================================+"
+	print "\033[1;92m+===============================================+"
 	print "\033[1;97m[\033[1;90m01\033[1;97m]\033[1;96m->\033[1;97m Aktifkan profile guard"
 	print "\033[1;97m[\033[1;90m02\033[1;97m]\033[1;96m->\033[1;97m Nonaktifkan profile guard"
 	print "\033[1;97m[\033[1;91m00\033[1;97m]\033[1;96m->\033[1;97m Kembali"
-	print "\033[1;92m+=================================================+"
+	print "\033[1;92m+===============================================+"
 	guard_pilih()
 
 def guard_pilih():
@@ -1205,11 +1205,11 @@ def menu_yahoo():
 		login()
 	os.system("clear")
 	print logo
-	print "\033[1;92m+=================================================+"
+	print "\033[1;92m+===============================================+"
 	print "\033[1;97m[\033[1;92m01\033[1;97m]\033[1;96m->\033[1;97m Clone dari daftar teman"
 	print "\033[1;97m[\033[1;92m02\033[1;97m]\033[1;96m->\033[1;97m Clone dari publik/teman"
 	print "\033[1;97m[\033[1;91m00\033[1;97m]\033[1;96m->\033[1;97m Kembali"
-	print "\033[1;92m+=================================================+"
+	print "\033[1;92m+===============================================+"
 	yahoo_pilih()
 
 #### SEARCH YAHOO ####
@@ -1247,13 +1247,13 @@ def yahoofriends():
 	print logo
 	mpsh = []
 	jml = 0
-	print "\033[1;92m+=================================================+"
+	print "\033[1;92m+===============================================+"
 	jalan('\033[1;97m[\033[1;92m~\033[1;97m] Mengambil email ...')
 	teman = requests.get('https://graph.facebook.com/me/friends?access_token='+toket)
 	kimak = json.loads(teman.text)
 	save = open('out/mailku.txt','w')
 	jalan('\033[1;97m[\033[1;92m•\033[1;97m] Mulai clone ...')
-	print "\033[1;92m+=================================================+"
+	print "\033[1;92m+===============================================+"
 	for w in kimak['data']:
 		jml +=1
 		mpsh.append(jml)
@@ -1308,7 +1308,7 @@ def yahoofromfriends():
 	print logo
 	mpsh = []
 	jml = 0
-	print "\033[1;92m+=================================================+"
+	print "\033[1;92m+===============================================+"
 	idt = raw_input("\033[1;97m[\033[1;92m+\033[1;97m] ID publik/teman : ")
 	try:
 		jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
@@ -1323,7 +1323,7 @@ def yahoofromfriends():
 	kimak = json.loads(teman.text)
 	save = open('out/mailteman.txt','w')
 	jalan('\033[1;97m[\033[1;92m•\033[1;97m] Mulai clone\033[1;97m...')
-	print "\033[1;92m+=================================================+"
+	print "\033[1;92m+===============================================+"
 	for w in kimak['data']:
 		jml +=1
 		mpsh.append(jml)
