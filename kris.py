@@ -321,7 +321,7 @@ def indo():
 	os.system('clear')
 	print logo
 	print "\033[1;92m+================================================+"
-	print "\033[1;97m[\033[1;93m01\033[ 1;97m]\033[1;96m->\033[1;97m CRACK DARI LIST TEMAN"
+	print "\033[1;97m[\033[1;93m01\033[1;97m]\033[1;96m->\033[1;97m CRACK DARI LIST TEMAN"
 	print "\033[1;97m[\033[1;93m02\033[1;97m]\033[1;96m->\033[1;97m  CRACK ID PUBLIK"
 	print "\033[1;97m[\033[1;93m03\033[1;97m]\033[1;96m->\033[1;97m  CRACK DARI FILE"
 	print "\033[1;97m[\033[1;91m00\033[1;97m]\033[1;96m->\033[1;97m  KEMBALI"
