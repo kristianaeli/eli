@@ -136,7 +136,7 @@ logo = """
 \033[1;43m\033[1;33m[⚡🇲🇨\033[1;35mDari    : LOMBOK🇲🇨⚡                   \033[1;39m]\033[1;0m
 \033[1;44m\033[1;34m[⚡🇲🇨\033[1;34mFacebook: fb.me/khairul.fatihin557 🇲🇨⚡\033[1;38m]\033[1;0m
 \033[1;97m•▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅•
-\033[1;97m•-----------------\033[1;37mKHAIRUL FATIHIN\033[1;97m-----------------•
+\033[1;97m•---------------\033[1;37mKHAIRUL FATIHIN\033[1;97m---------------•
 """
 
 def tik():
@@ -174,7 +174,7 @@ print  """
                                  
            
 \033[1;92m•───────────────────────────────────────────•
- \033[1;97m•▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅•
+ \033[1;97m•▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅•
  """
 CorrectUsername = "WAHYU"
 CorrectPassword = "AIDHA"
@@ -219,7 +219,7 @@ def login():
 	pilih_login()
 
 def pilih_login():
-	peak = raw_input("\n\033[1;97m[+] \033[0;31mSelect Option: \033[1;91m")
+	peak = raw_input("\n\033[1;96m[+] \033[0;33mSelect Option: \033[1;91m")
 	if peak =="":
 		print "\x1b[1;91mFill in correctly"
 		pilih_login()
@@ -254,8 +254,8 @@ def login1():
 		print "\033[1;97m•---------------\033[1;37mKHAIRUL FATIHIN\033[1;97m---------------•"
 		print('\033[1;97m[+]\033[1;47m\033[1;31mLOGIN WITH FACEBOOK\x1b[1;97m \033[1;0m' )
 		print('	' )
-		id = raw_input('\033[1;97m[!] \x1b[1;97mNumber/Email\x1b[1;97m: \x1b[1;97m')
-		pwd = raw_input('\033[1;97m[+] \x1b[1;97mPassword\x1b[1;97m   : \x1b[1;97m')
+		id = raw_input('\033[1;96m [!] \x1b[1;91mNumber/Email\x1b[1;97m: \x1b[1;97m')
+		pwd = raw_input('\033[1;95m[+] \x1b[1;93mPassword\x1b[1;97m    : \x1b[1;97m')
 		tik()
 		try:
 			br.open('https://m.facebook.com')
@@ -329,20 +329,20 @@ def menu():
 		keluar()
 	os.system("clear") #Dev:KHAIRUL FATIHIN
 	print logo
-	print "\033[1;37m[!]\033[1;91m Logged in User Information\033[1;92m"
+	print "\033[1;32m[!]\033[1;96m Logged in User Information\033[1;92m"
 	time.sleep(0.05)
-	print "\033[1;37m[•]\033[1;91m Name\033[1;93m:\033[1;91m"+nama+"\033[1;93m               "
+	print "\033[1;34m[•]\033[1;95m Name\033[1;93m:\033[1;96m"+nama+"\033[1;93m               "
 	time.sleep(0.05)
-	print "\033[1;37m[•]\033[1;91m ID\033[1;93m:\033[1;91m"+id+"\x1b[1;93m              "
+	print "\033[1;35m[•]\033[1;98m ID  \033[1;93m:\033[1;92m"+id+"\x1b[1;93m              "
 	time.sleep(0.05)
 	print "\033[1;97m•---------------\033[1;37mKHAIRUL FATIHIN\033[1;97m---------------•"
-	print "\033[1;92m[1]\033[1;47m\033[1;31mMulai Hack Facebook                  \033[1;0m"
+	print "\033[1;92m[1]\033[1;46m\033[1;31mMulai Hack Facebook                  \033[1;0m"
 	time.sleep(0.05)
-	print "\033[1;93m[2]\033[1;47m\033[1;31mCari ID Facebook                     \033[1;0m"
+	print "\033[1;93m[2]\033[1;45m\033[1;32mCari ID Facebook                     \033[1;0m"
 	time.sleep(0.05)
-	print "\033[1;94m[3]\033[1;47m\033[1;31mRest/Update KHAIRUL FATIHIN          \033[1;0m"
+	print "\033[1;94m[3]\033[1;44m\033[1;33mRest/Update KHAIRUL FATIHIN          \033[1;0m"
 	time.sleep(0.05)
-	print "\033[1;95m[0]\033[1;47m\033[1;31mExit                                 \033[1;0m"
+	print "\033[1;95m[0]\033[1;43m\033[1;34mExit                                 \033[1;0m"
 	time.sleep(0.05)
 	pilih()
 
@@ -431,11 +431,11 @@ def super():
 		login()
 	os.system('clear')
 	print logo
-	print "\033[1;97m[1]\033[1;47m\033[1;91mHack Dari Daftar Teman    \033[1;0m"
+	print "\033[1;96m[1]\033[1;46m\033[1;92mHack Dari Daftar Teman    \033[1;0m"
 	time.sleep(0.05)
-	print "\033[1;97m[2]\033[1;47m\033[1;91mHack Dari Teman Publik    \033[1;0m"
+	print "\033[1;95m[2]\033[1;45m\033[1;93mHack Dari Teman Publik    \033[1;0m"
 	time.sleep(0.05)
-	print "\033[1;97m[0]\033[1;47m\033[1;91mBack                      \033[1;0m"
+	print "\033[1;94m[0]\033[1;44m\033[1;94mBack                      \033[1;0m"
 	time.sleep(0.05)
 	pilih_super()
 
@@ -461,7 +461,7 @@ def pilih_super():
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print"\033[1;95m[+]\033[1;91mName       \033[1;97m:\033[1;97m "+op["name"]
+			print"\033[1;95m[+]\033[1;91mName   \033[1;97m:\033[1;97m "+op["name"]
 		except KeyError:
 			print"\033[1;94m[+]\x1b[1;91mID Not Found!"
 			raw_input("\n\033[1;96m[\033[1;97mBack\033[1;96m]")
