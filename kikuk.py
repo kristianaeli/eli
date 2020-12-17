@@ -42,7 +42,7 @@ def animate():
     for c in itertools.cycle(['\x1b[1;91m||', '\x1b[1;92m//', '\x1b[1;93m$$', '\x1b[1;94m--', '\x1b[1;95m$$', '\x1b[1;96m--', '\x1b[1;97m\\', '\x1b[1;91m||', '\x1b[1;92m//', '\x1b[1;93m$$', '\x1b[1;94m--', '\x1b[1;95m$$', '\x1b[1;96m--', '\x1b[1;97m\\']):
         if done:
             break
-        sys.stdout.write('\r\x1b[1;95maidha fitri\x1b[1;94m:( ' + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c)
+        sys.stdout.write('\r\x1b[1;95mWahyu LOVE Aidha\x1b[1;94m:( ' + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c)
         sys.stdout.flush()
         time.sleep(0.1)
 
@@ -97,7 +97,7 @@ logo = """
 \033[1;96m  \033[1;96mGtoup    \033[1;91m: \033[1;92mS A F I
 \033[1;96m  \033[1;94Facebook  \033[1;91m: \033[1;92mRINCIANI PUTRI
 \033[1;94m────────────────────────────────────────────────
-\033[1;95m       {\033[1;97mSELAMAT DATANG DI SCRIPT AIDHA FITRI\033[1;95m}                     
+\033[1;95m     {\033[1;97mSELAMAT DATANG DI SCRIPT AIDHA FITRI\033[1;95m}                     
 \033[1;92m     Jangan lupa follow facebook gw
 \033[1;94m────────────────────────────────────────────────"""
 logo1 = """
