@@ -42,7 +42,7 @@ def animate():
     for c in itertools.cycle(['\x1b[1;91m||', '\x1b[1;92m//', '\x1b[1;93m$$', '\x1b[1;94m--', '\x1b[1;95m$$', '\x1b[1;96m--', '\x1b[1;97m\\', '\x1b[1;91m||', '\x1b[1;92m//', '\x1b[1;93m$$', '\x1b[1;94m--', '\x1b[1;95m$$', '\x1b[1;96m--', '\x1b[1;97m\\']):
         if done:
             break
-        sys.stdout.write('\r\x1b[1;95mYayanXD\x1b[1;94m:( ' + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c)
+        sys.stdout.write('\r\x1b[1;95maidha fitri\x1b[1;94m:( ' + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c + c)
         sys.stdout.flush()
         time.sleep(0.1)
 
@@ -93,13 +93,12 @@ logo = """
 \033[1;93m	██║ ╚═╝ ██║██████╔╝██║  
 \033[1;92m	╚═╝     ╚═╝╚═════╝ ╚═╝   \033[1;93mVol.07
 \033[1;94m────────────────────────────────────────────────
-\033[1;96m  ▼￣＞-―-＜￣▼  \033[1;95mAuthor   \033[1;91m: \033[1;92mAIDHA FITRI
-\033[1;96m   Ｙ　     Ｙ   \033[1;96mGtoup   \033[1;91m: \033[1;92mS A F I
-\033[1;96m/\ /   \033[1;91m●  \033[1;92mWA \033[1;91m●\033[1;96m）  \033[1;95mWhatsApp \033[1;91m: \033[1;92m08560303XNXX
-\033[1;96m\ ｜　 つ　  ヽつ\033[1;94Facebook \033[1;91m: \033[1;92mRINCIANI PUTRI
+\033[1;96m  \033[1;95mAuthor   \033[1;91m: \033[1;92mAIDHA FITRI
+\033[1;96m  \033[1;96mGtoup    \033[1;91m: \033[1;92mS A F I
+\033[1;96m  \033[1;94Facebook  \033[1;91m: \033[1;92mRINCIANI PUTRI
 \033[1;94m────────────────────────────────────────────────
-\033[1;95m         {\033[1;97mSELAMAT DATANG DI SCRIPT AIDHA FITRI\033[1;95m}                     
-\033[1;92m   Jangan lupa follow facebook gw
+\033[1;95m       {\033[1;97mSELAMAT DATANG DI SCRIPT AIDHA FITRI\033[1;95m}                     
+\033[1;92m     Jangan lupa follow facebook gw
 \033[1;94m────────────────────────────────────────────────"""
 logo1 = """
 \033[1;91m	███╗   ███╗██████╗ ███████╗
@@ -109,14 +108,13 @@ logo1 = """
 \033[1;95m	██║ ╚═╝ ██║██████╔╝██║  
 \033[1;96m	╚═╝     ╚═╝╚═════╝ ╚═╝   \033[1;93mVol.07
 \033[1;94m────────────────────────────────────────────────
-\033[1;96m  ▼￣＞-―-＜￣▼  \033[1;95mAuthor   \033[1;91m: \033[1;92mAIDHA FITRI
-\033[1;96m   Ｙ　     Ｙ   \033[1;96mGtoup   \033[1;91m: \033[1;92mS A F I
-\033[1;96m/\ /   \033[1;91m●  \033[1;92mWA \033[1;91m●\033[1;96m）  \033[1;95mWhatsApp \033[1;91m: \033[1;92m08560303XNXX
-\033[1;96m\ ｜　 つ　  ヽつ\033[1;94Facebook \033[1;91m: \033[1;92mRINCIANI PUTRI
+\033[1;96m  \033[1;95mAuthor   \033[1;91m: \033[1;92mAIDHA FITRI
+\033[1;96m  \033[1;96mGtoup    \033[1;91m: \033[1;92mS A F I
+\033[1;96m  \033[1;94Facebook  \033[1;91m: \033[1;92mRINCIANI PUTRI
 \033[1;94m────────────────────────────────────────────────
-\033[1;91m                    PERHATIAN\033[1;96m!
-\033[1;92m       Setelah anda memasuka akun fb atau token
-\033[1;92m     Akan Berkomentar otomatis di akun author
+\033[1;95m                    PERHATIAN\033[1;96m!
+\033[1;94m       Setelah anda memasuka akun fb atau token
+\033[1;93m     Akan Berkomentar otomatis di akun author
 \033[1;94m────────────────────────────────────────────────""" 
 
 # titik #
@@ -241,7 +239,7 @@ def tokenz():
 		zedd.write(toket)
 		zedd.close()
 	        print '\n\x1b[1;95mLogin Berhasil.•◈•.'
-		yayan_gantenx()
+		aidha_fitri()
 	except KeyError:
 		print "\033[1;91m[!] Token Salah"
 		e = raw_input("\033[1;91m[?] \033[1;96mAnda Tau token? Kalo Tidak Tau Pm saya!\033[1;91m{\033[1;96my\033[1;97m/\033[1;93mn\033[1;91m}\033[1;97m: ")
