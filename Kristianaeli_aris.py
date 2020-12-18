@@ -131,9 +131,9 @@ logo = """
 \033[1;91m•───────────────────────────────────────────•
 \033[1;97m•---------------\033[1;37mKHAIRUL FATIHIN\033[1;97m---------------•
  \033[1;97m•▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅•
-\033[1;41m\033[1;31m[⚡🇲🇨\033[1;37mAuthor  : KHAIRUL FATIHIN 🇲🇨⚡           \033[1;34m]\033[1;0m
-\033[1;42m\033[1;32m[⚡🇲🇨\033[1;36mGroup   : FANTASTIC🇲🇨⚡                        \033[1;32m]\033[1;0m
-\033[1;43m\033[1;33m[⚡🇲🇨\033[1;35mDari    : LOMBOK🇲🇨⚡                             \033[1;39m]\033[1;0m
+\033[1;41m\033[1;31m[⚡🇲🇨\033[1;37mAuthor  : KHAIRUL FATIHIN 🇲🇨⚡         \033[1;34m]\033[1;0m
+\033[1;42m\033[1;32m[⚡🇲🇨\033[1;36mGroup   : FANTASTIC🇲🇨⚡                \033[1;32m]\033[1;0m
+\033[1;43m\033[1;33m[⚡🇲🇨\033[1;35mDari    : LOMBOK🇲🇨⚡                   \033[1;39m]\033[1;0m
 \033[1;44m\033[1;34m[⚡🇲🇨\033[1;34mFacebook: fb.me/khairul.fatihin557 🇲🇨⚡\033[1;38m]\033[1;0m
 \033[1;97m•▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅•
 \033[1;97m•---------------\033[1;37mKHAIRUL FATIHIN\033[1;97m---------------•
@@ -181,9 +181,9 @@ CorrectPassword = "AIDHA"
 
 loop = 'true'
 while (loop == 'true'):
-    username = raw_input("\033[1;91m[+] \033[1;95m    \x1b[1;91mTool Username \x1b[1;91m: \x1b[1;97m")
+    username = raw_input("\033[1;91m[+]\033[1;95m \x1b[1;94mTool Username \x1b[1;91m: \x1b[1;97m")
     if (username == CorrectUsername):
-    	password = raw_input("\033[1;91m[+] \033[1;93m\x1b[1;91mTool Password \x1b[1;91m: \x1b[1;97m")
+    	password = raw_input("\033[1;91m[+]\033[1;93m\x1b[1;96mTool Password \x1b[1;91m: \x1b[1;97m")
         if (password == CorrectPassword):
             print "Logged in successfully as " + username #Dev:KHAIRUL FATIHIN
 	    time.sleep(2)
@@ -204,17 +204,17 @@ def lisensi():
 def login():
 	os.system('clear')
 	print logo
-	print "\033[1;91m[1]\033[1;42m\033[1;31mLogin With Facebook              \033[1;0m"
+	print "\033[1;91m[1]\033[1;42m\033[1;31mLogin With Facebook             \033[1;0m"
         time.sleep(0.05)
-        print "\033[1;92m[2]\033[1;43m\033[1;32mLogin With Token                  \033[1;0m"
+        print "\033[1;92m[2]\033[1;43m\033[1;32mLogin With Token                \033[1;0m"
         time.sleep(0.05)
-        print "\033[1;93m[3]\033[1;44m\033[1;33mDownload Token App           \033[1;0m"
+        print "\033[1;93m[3]\033[1;44m\033[1;33mDownload Token App              \033[1;0m"
         time.sleep(0.05)
-        print "\033[1;94m[4]\033[1;45m\033[1;34mFollow Fb Saya                       \033[1;0m"
+        print "\033[1;94m[4]\033[1;45m\033[1;34mFollow Fb Saya                  \033[1;0m"
         time.sleep(0.05)
 	print "\033[1;95m[5]\033[1;46m\033[1;35mKunjungi Group Fantastic        \033[1;0m"
         time.sleep(0.05)
-        print "\033[1;96m[0]\033[1;47m\033[1;36mExit                                            \033[1;0m"
+        print "\033[1;96m[0]\033[1;47m\033[1;36mExit                            \033[1;0m"
 	time.sleep(0.05)
 	pilih_login()
 
