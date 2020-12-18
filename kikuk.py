@@ -324,16 +324,16 @@ def menu():
 	time.sleep(0.05)
 	print "\033[1;37m[•]\033[1;91m Name\033[1;93m:\033[1;91m"+nama+"\033[1;93m               "
 	time.sleep(0.05)
-	print "\033[1;37m[•]\033[1;91m ID\033[1;93m:\033[1;91m"+id+"\x1b[1;93m              "
+	print "\033[1;37m[•]\033[1;91m ID  \033[1;93m:\033[1;91m"+id+"\x1b[1;93m              "
 	time.sleep(0.05)
-	print "\033[1;97m•-----------------\033[1;37mKHAIRUL FATIHIN\033[1;97m-----------------•"
-	print "\033[1;92m[1]\033[1;47m\033[1;31mMulai Hack Facebook                          \033[1;0m"
+	print "\033[1;97m•-----------------\033[1;37mAIDHA FITRI\033[1;97m-----------------•"
+	print "\033[1;92m[1]\033[1;47m\033[1;31mMulai Hack Facebook           \033[1;0m"
 	time.sleep(0.05)
-	print "\033[1;93m[2]\033[1;47m\033[1;31mCari ID Facebook                     \033[1;0m"
+	print "\033[1;93m[2]\033[1;47m\033[1;31mCari ID Facebook              \033[1;0m"
 	time.sleep(0.05)
-	print "\033[1;94m[3]\033[1;47m\033[1;31mRest/Update KHAIRUL FATIHIN                         \033[1;0m"
+	print "\033[1;94m[3]\033[1;47m\033[1;31mRest/Update Aidha Fitri       \033[1;0m"
 	time.sleep(0.05)
-	print "\033[1;95m[0]\033[1;47m\033[1;31mExit                                      \033[1;0m"
+	print "\033[1;95m[0]\033[1;47m\033[1;31mExit                          \033[1;0m"
 	time.sleep(0.05)
 	pilih()
 
