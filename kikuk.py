@@ -199,13 +199,13 @@ def login():
         time.sleep(0.05)
         print "\033[1;92m[2]\033[1;46m\033[1;34mLogin With Token                   \033[1;0m"
         time.sleep(0.05)
-        print "\033[1;93m[3]\033[1;45m\033[1;33mDownload Token App            \033[1;0m"
+        print "\033[1;93m[3]\033[1;45m\033[1;33mDownload Token App                 \033[1;0m"
         time.sleep(0.05)
-        print "\033[1;94m[4]\033[1;44m\033[1;32mFollow Fb Saya                       \033[1;0m"
+        print "\033[1;94m[4]\033[1;44m\033[1;32mFollow Fb Saya                     \033[1;0m"
         time.sleep(0.05)
-	print "\033[1;95m[5]\033[1;47m\033[1;31mChat Fb Saya Klo Ada mslh  \033[1;0m"
+	print "\033[1;95m[5]\033[1;47m\033[1;31mChat Fb Saya Klo Ada mslh          \033[1;0m"
         time.sleep(0.05)
-        print "\033[1;96m[0]\033[1;42m\033[1;31mExit                                             \033[1;0m"
+        print "\033[1;96m[0]\033[1;42m\033[1;31mExit                               \033[1;0m"
 	time.sleep(0.05)
 	pilih_login()
 
